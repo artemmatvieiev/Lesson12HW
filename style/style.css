@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 2rem;
+	background: #fff;
+	color: #000;
+}
+#registration, #login {
+	display: none;
+	flex-flow: row wrap;
+	width: 40%;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	padding: 30px;
+}
+#registration input, #login input {
+	width: 100%;
+	margin: 0 0 20px;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+}
+/*#registration input:focus, #login input:focus {
+	border:1px solid green;
+}*/
+#registration label, #login label {
+	display: none
+}
+#registration button, #login button {
+	margin-right: 20px;
+}
+#registration label.error, #login label.error {
+	display: block;
+	color: red;
+}
+#loginOk {
+	display: none;
+}
+#errorLogin {
+	color: red;
+	display: none;
+}

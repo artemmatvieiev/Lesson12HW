@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Example</title>
+		<link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	<body>
+		<div id="enterButtons">
+			<button id="loginBtn" data-btn="login">Войти</button>
+			<button id="registrationBtn" data-btn="registration">Зарегистрироваться</button>
+		</div>
+		<div id="loginOk">
+			<span id="user"></span>
+			<button id="exit">Выйти</button>
+		</div>
+		<form action="" id="login">
+			<label for="loginUsername">Имя должно начинаться с большой буквы и содержать не менее 3 символов</label>
+			<input type="text" data-input="username" id="loginUsername" name="loginUsername" placeholder="Введите ваше имя" />
+			<label for="loginPassword">Пароль должен содержать не менее 8 символов</label>
+			<input type="password" data-input="password" id="loginPassword" name="loginPassword" placeholder="Введите ваш пороль"/>
+			<p id="errorLogin">Вы ввели неправильное имя или пароль</p>
+			<div id="loginBtns">
+				<button id="loginSubmit" data-btnvalue="submit" type="submit">Войти</button>
+				<button id="loginCancel" data-btnvalue="cancel">Отмена</button>
+			</div>
+		</form>
+		<form action="" id="registration">
+			<label for="registrationUsername" class="username">Имя должно начинаться с большой буквы и содержать не менее 3 символов</label>
+			<input type="text"  data-input="username"  id="registrationUsername" name="registrationUsername" placeholder="Как вас зовут?" />
+			<label for="registrationPassword">Пароль должен содержать не менее 8 символов</label>
+			<input type="password" data-input="password" id="registrationPassword" name="registrationPassword" placeholder="Придумайте пароль"/>
+			<label for="registrationTel">Введите телефон в таком формате 123 456 78 90</label>
+			<input type="tel" data-input="tel" id="registrationTel" name="registrationTel" placeholder="Введите свой телефон">
+			<label for="registrationEmail">Введите email в таком формате example@abc.def</label>
+			<input type="email" data-input="email" id="registrationEmail" name="registrationEmail" placeholder="Введите email">
+			<div id="regBtns">
+				<button id="registrationSubmit" data-btnvalue="submit" type="submit">Зарегистрироваться</button>
+				<button data-btnvalue="cancel" id="registrationCancel">Отмена</button>
+			</div>
+		</form>
+		<script src="js/const.js"></script>
+		<script src="js/handlers.js"></script>
+		<script src="js/user.js"></script>
+	</body>
+</html>
